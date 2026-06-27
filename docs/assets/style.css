@@ -107,3 +107,47 @@ td a { font-weight: 650; }
   .table-toolbar { grid-template-columns: 1fr; }
   .section-heading, .footer-grid { align-items: start; flex-direction: column; }
 }
+
+.maintainer-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.maintainer-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.maintainer-card h2 {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 1.2rem;
+}
+
+.maintainer-card p {
+  margin: 0.25rem 0;
+}
+
+.maintainer-links a {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .maintainer-card {
+    align-items: flex-start;
+  }
+
+  .maintainer-avatar {
+    width: 56px;
+    height: 56px;
+  }
+}
