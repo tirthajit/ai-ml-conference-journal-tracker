@@ -2,8 +2,6 @@
 title: AI/ML Conference & Journal Tracker
 ---
 
-# AI/ML Conference & Journal Tracker
-
 A source-backed public tracker for AI/ML conference deadlines, tentative annual windows, and reputable journals.
 
 ## Start here
