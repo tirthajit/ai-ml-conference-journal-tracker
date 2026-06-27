@@ -2,7 +2,6 @@
 title: Reputable Journals
 ---
 
-# Reputable Journals
 
 The full table is in [`data/journals_reputable.csv`](../data/journals_reputable.csv).
 
