@@ -3,7 +3,7 @@ title: Current-Cycle Deadline Calendar
 ---
 
 
-The full table is in [`data/submission_calendar_current_cycle.csv`](./data/submission_calendar_current_cycle.csv).
+The full table is in [`data/submission_calendar_current_cycle.csv`](../data/submission_calendar_current_cycle.csv).
 
 | curated_tier | acronym | current_or_next_edition | full_paper_deadline | deadline_status | timezone | deadline_confidence |
 | --- | --- | --- | --- | --- | --- | --- |
