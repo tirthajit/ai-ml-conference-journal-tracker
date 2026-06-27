@@ -1,92 +1,145 @@
 # Setup and Maintenance Guide
 
-This guide assumes the maintainer is using the GitHub username `tirthajit` and wants the project site at:
+This guide is written for the live repository:
+
+```text
+https://github.com/tirthajit/ai-ml-conference-journal-tracker
+```
+
+and project webpage:
 
 ```text
 https://tirthajit.github.io/ai-ml-conference-journal-tracker/
 ```
 
-## One-time setup from GitHub web
+## One-time setup checklist
 
-1. Create a new public repository named `ai-ml-conference-journal-tracker`.
-2. Do not initialize it with a README, license, or `.gitignore` if you are uploading this package, because those files are already included.
-3. Extract this ZIP file.
-4. Upload the **contents inside** the `ai-ml-conference-journal-tracker/` folder to the repository root.
-5. Commit with: `Initial release: AI/ML conference and journal tracker`.
-6. Go to **Settings → Pages**.
-7. Under **Build and deployment**, choose **Deploy from a branch**.
-8. Select branch `main` and folder `/docs`.
-9. Save.
-10. After deployment, the website should be available at `https://tirthajit.github.io/ai-ml-conference-journal-tracker/`.
-
-## Repository metadata
-
-Use this description:
-
-```text
-Ranked AI/ML conference and journal tracker with submission deadlines, tentative annual windows, source links, and update status.
-```
-
-Use these topics:
-
-```text
-artificial-intelligence, machine-learning, conferences, journals, research, deadlines, academic-publishing, computer-vision, nlp, data-mining, medical-imaging, robotics
-```
+1. Repository is public.
+2. GitHub Pages is enabled from `main` branch and `/docs` folder.
+3. The repository About panel contains:
+   - Description: `Ranked AI/ML conference and journal tracker with submission deadlines, tentative annual windows, source links, and update status.`
+   - Website: `https://tirthajit.github.io/ai-ml-conference-journal-tracker/`
+   - Topics: `artificial-intelligence`, `machine-learning`, `conferences`, `journals`, `research`, `deadlines`, `academic-publishing`.
+4. Issues are enabled.
+5. GitHub Actions shows `Validate data`.
+6. The root-level folder `workflows/` is absent. Only `.github/workflows/` should exist.
 
 ## Web-only update workflow
 
-For most updates, edit files directly on GitHub.
+Use this when making small corrections from the GitHub website.
 
-### Updating a conference deadline
+### Update a conference deadline
 
 1. Open `data/submission_calendar_current_cycle.csv`.
-2. Click the edit pencil.
-3. Update the relevant row.
-4. Update at least these fields: `full_paper_deadline`, `timezone`, `deadline_confidence`, `source_url`, `last_verified`, and `notes`.
-5. Commit with a specific message, e.g. `Update AAAI-27 deadline source`.
-6. Update `CHANGELOG.md` with one short bullet.
+2. Click the pencil icon.
+3. Update the row.
+4. Update these fields together:
 
-### Updating the general conference list
+```text
+abstract_deadline
+full_paper_deadline
+timezone
+deadline_status
+deadline_confidence
+official_or_tracker_url
+last_verified
+notes
+```
 
-Edit `data/conferences_master.csv` when the venue itself changes: rank, name, area, usual deadline window, or source.
+5. Commit with a specific message, for example:
 
-### Updating journals
+```text
+Update AAAI-27 official deadline
+```
 
-Edit `data/journals_reputable.csv` when adding a journal or updating metrics/ranking source notes.
+6. Open `CHANGELOG.md`.
+7. Add a dated entry.
+8. Commit.
 
-## Local update workflow
+### Update a general tentative window
 
-Use this when making many edits.
+Edit `data/conferences_master.csv`, then update:
+
+```text
+usual_tentative_window
+deadline_confidence
+official_or_tracker_url
+last_verified
+notes
+```
+
+### Update a journal row
+
+Edit `data/journals_reputable.csv`, then update:
+
+```text
+jcr_quartile_or_rank_note
+sjr_quartile_note
+metric_source_url
+journal_url
+last_verified
+notes
+```
+
+## Local full-maintenance workflow
+
+Use this for larger updates or before a formal release.
 
 ```bash
 git clone https://github.com/tirthajit/ai-ml-conference-journal-tracker.git
 cd ai-ml-conference-journal-tracker
 python scripts/validate_data.py
-python scripts/build_markdown_tables.py
+python scripts/build_static_site.py
+git status
 git add .
-git commit -m "Update conference deadlines"
+git commit -m "Update tracker data and website"
 git push
 ```
 
-For later updates:
+## Creating the first GitHub release
 
-```bash
-cd ai-ml-conference-journal-tracker
-git pull
-# edit CSV/Markdown files
-python scripts/validate_data.py
-python scripts/build_markdown_tables.py
-git add .
-git commit -m "Update current-cycle deadlines"
-git push
+1. Open the repository on GitHub.
+2. Click **Releases** on the right sidebar, or open:
+
+```text
+https://github.com/tirthajit/ai-ml-conference-journal-tracker/releases/new
 ```
 
-## Maintenance rules
+3. Click **Choose a tag**.
+4. Type:
 
-- Keep CSV files as the source of truth.
+```text
+v1.0.0
+```
+
+5. Select **Create new tag: v1.0.0 on publish**.
+6. Release title:
+
+```text
+v1.0.0 — Initial public release
+```
+
+7. Paste the release notes from `RELEASE_NOTES_v1.0.0.md`.
+8. Attach the Excel file from `exports/` if desired.
+9. Click **Publish release**.
+
+## Linking from your personal webpage
+
+Add a compact project card to `https://tirthajit.github.io/`:
+
+```markdown
+### AI/ML Conference & Journal Tracker
+
+A curated tracker of reputable AI/ML conferences and journals, including rankings, submission deadlines, tentative annual windows, and source links.
+
+[View Repository](https://github.com/tirthajit/ai-ml-conference-journal-tracker) · [Browse Tracker](https://tirthajit.github.io/ai-ml-conference-journal-tracker/)
+```
+
+## Data-quality rules
+
+- Do not mark a deadline as `Official announced` without an official source URL.
 - Use ISO dates: `YYYY-MM-DD`.
-- Use `AoE` when the conference uses Anywhere on Earth time.
-- Do not mix official and guessed deadlines without labeling them.
-- Prefer official CFP/conference pages for deadlines.
-- Update `last_verified` whenever a row is checked.
-- Add a `CHANGELOG.md` entry for visible updates.
+- Keep `AoE` or a clear timezone where known.
+- Do not mix tentative and official deadlines without a confidence label.
+- Avoid generic CFP aggregators unless no official page is available.
+- Keep CSV files as the canonical source; Excel is a convenience export.

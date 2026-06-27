@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tirthajit.github.io/ai-ml-conference-journal-tracker/sitemap.xml

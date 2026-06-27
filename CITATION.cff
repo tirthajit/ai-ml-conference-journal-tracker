@@ -1,16 +1,18 @@
 cff-version: 1.2.0
 title: "AI/ML Conference & Journal Tracker"
-message: "If this tracker helps your research, please cite the repository."
+message: "If you use this tracker, please cite it using this metadata."
 type: dataset
 authors:
   - family-names: "Baruah"
     given-names: "Tirthajit"
-date-released: "2026-06-27"
-license: "CC-BY-4.0"
 repository-code: "https://github.com/tirthajit/ai-ml-conference-journal-tracker"
+url: "https://tirthajit.github.io/ai-ml-conference-journal-tracker/"
+version: "1.0.0"
+date-released: "2026-06-28"
+license: "CC-BY-4.0"
 keywords:
-  - artificial-intelligence
-  - machine-learning
-  - conferences
-  - journals
-  - deadlines
+  - artificial intelligence
+  - machine learning
+  - conference deadlines
+  - journal rankings
+  - academic publishing

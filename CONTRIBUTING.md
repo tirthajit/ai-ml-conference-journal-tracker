@@ -1,23 +1,39 @@
 # Contributing
 
-Contributions are welcome if they improve accuracy, source quality, or coverage.
+Contributions are welcome if they improve accuracy, source quality, or usability.
 
-## Rules for updates
+## What to submit
 
-1. Prefer official conference/journal pages.
-2. If using a tracker, label the row as `Tracker / historical pattern`.
-3. Do not replace an official source with an unofficial one.
-4. For tentative deadlines, use a month/window and clearly mark the confidence.
-5. Keep venue names normalized:
-   - NeurIPS, not NIPS
-   - The ACM Web Conference, not WWW only
-   - ECML PKDD, not ECML alone
-   - IJCAI-ECAI when the year is a joint edition
+Good update requests include:
+
+- Official CFP or conference page.
+- Journal publisher page.
+- Ranking or metric source page.
+- Clear old value and new value.
+- Deadline timezone, if applicable.
+- Date on which the source was checked.
+
+## Preferred source hierarchy
+
+1. Official conference or journal website.
+2. Publisher, society, or association page.
+3. Recognized ranking or indexing database.
+4. Reputable deadline tracker.
+5. Historical inference, marked clearly as tentative.
 
 ## Pull request checklist
 
-- [ ] CSV validates with `python scripts/validate_data.py`
-- [ ] Source URL added or updated
-- [ ] Date is in `YYYY-MM-DD` when exact
-- [ ] `deadline_confidence` is correct
-- [ ] Notes mention any renamed or joint editions
+Before opening a pull request:
+
+- Run `python scripts/validate_data.py`.
+- Use ISO dates: `YYYY-MM-DD`.
+- Include a source URL for every official deadline.
+- Update `CHANGELOG.md`.
+- Keep tables and CSV rows sorted where appropriate.
+
+## Style rules
+
+- Use concise notes.
+- Do not add predatory, generic, or unverifiable venues.
+- Do not overstate journal metrics; metrics change annually.
+- Mark historical estimates as tentative.
