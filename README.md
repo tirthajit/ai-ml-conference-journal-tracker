@@ -2,7 +2,7 @@
 
 [![Data validation](https://github.com/tirthajit/ai-ml-conference-journal-tracker/actions/workflows/validate-data.yml/badge.svg)](https://github.com/tirthajit/ai-ml-conference-journal-tracker/actions/workflows/validate-data.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC--BY--4.0-green.svg)](LICENSE)
-[![Last verified](https://img.shields.io/badge/last_verified-2026-06-27-informational)](data/sources.csv)
+[![Last verified](https://img.shields.io/badge/last_verified-2026-06-27-informational)](./data/sources.csv)
 
 A curated, ranked, source-backed tracker for reputable AI/ML conferences and journals.
 
