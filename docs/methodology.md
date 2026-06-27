@@ -2,8 +2,6 @@
 title: Methodology
 ---
 
-# Methodology
-
 ## Source hierarchy
 
 1. Official conference or journal page.
