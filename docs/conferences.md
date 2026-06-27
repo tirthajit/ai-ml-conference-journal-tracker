@@ -2,9 +2,7 @@
 title: Conference Master List
 ---
 
-# Conference Master List
-
-This page shows a compact preview. The full machine-readable table is in [`data/conferences_master.csv`](../data/conferences_master.csv).
+This page shows a compact preview. The full machine-readable table is in [`data/conferences_master.csv`](./data/conferences_master.csv).
 
 | curated_tier | acronym | name | area | full_paper_deadline | usual_tentative_window | deadline_confidence |
 | --- | --- | --- | --- | --- | --- | --- |
