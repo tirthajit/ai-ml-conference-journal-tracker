@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Current-Cycle Deadline Calendar
 ---
 
