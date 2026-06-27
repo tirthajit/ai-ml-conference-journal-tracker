@@ -1,28 +1,78 @@
 name: Conference or journal update
-description: Suggest a deadline, ranking, or journal update.
+description: Suggest a deadline, ranking, source, or journal update.
 title: "[Update]: "
-labels: ["data-update"]
+labels: ["data-update", "needs-review"]
 body:
-  - type: input
-    id: venue
+  - type: dropdown
+    id: item_type
     attributes:
-      label: Venue
-      description: Acronym and full name
-      placeholder: "AAAI — AAAI Conference on Artificial Intelligence"
+      label: Item type
+      options:
+        - Conference
+        - Journal
+        - Source
+        - Website/documentation
     validations:
       required: true
   - type: input
-    id: source
+    id: venue
     attributes:
-      label: Source URL
-      description: Prefer official CFP or society page
-      placeholder: "https://..."
+      label: Venue or journal name
+      description: Acronym and full name where possible.
+      placeholder: "AAAI — AAAI Conference on Artificial Intelligence"
+    validations:
+      required: true
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - Deadline update
+        - Ranking/tier update
+        - Source URL update
+        - Journal metric update
+        - Name/alias correction
+        - Area/relevance-tag correction
+        - Other
     validations:
       required: true
   - type: textarea
     id: change
     attributes:
       label: Requested change
-      description: What should be updated?
+      description: State the old value, new value, and why the change is needed.
+      placeholder: |
+        Old value:
+        New value:
+        Reason:
     validations:
       required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Prefer an official CFP, conference page, publisher page, or ranking database.
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: input
+    id: timezone
+    attributes:
+      label: Deadline timezone, if applicable
+      placeholder: "AoE, UTC, Pacific Time, etc."
+  - type: input
+    id: checked_date
+    attributes:
+      label: Date checked
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have included a verifiable source URL.
+          required: true
+        - label: I understand tentative deadlines should be marked as tentative.
+          required: true

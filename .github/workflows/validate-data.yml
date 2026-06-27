@@ -2,16 +2,21 @@ name: Validate data
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-      - name: Validate CSV files
+          python-version: "3.12"
+      - name: Validate CSV data
         run: python scripts/validate_data.py
+      - name: Check static-site files
+        run: python scripts/build_static_site.py --check
