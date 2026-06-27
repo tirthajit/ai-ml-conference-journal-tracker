@@ -1,6 +1,6 @@
 # AI/ML Conference & Journal Tracker
 
-[![Data validation](https://img.shields.io/badge/data-validation_ready-blue)](#data-quality)
+[![Data validation](https://github.com/tirthajit/ai-ml-conference-journal-tracker/actions/workflows/validate-data.yml/badge.svg)](https://github.com/tirthajit/ai-ml-conference-journal-tracker/actions/workflows/validate-data.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC--BY--4.0-green.svg)](LICENSE)
 [![Last verified](https://img.shields.io/badge/last_verified-2026-06-27-informational)](data/sources.csv)
 
@@ -9,6 +9,12 @@ A curated, ranked, source-backed tracker for reputable AI/ML conferences and jou
 This repository is designed for researchers who need a fast way to decide **where to submit**, **when to prepare**, and **which sources to verify** before final submission.
 
 > Maintainer note: conference deadlines move often. Always verify the official CFP before submission.
+
+## Project links
+
+- Repository: https://github.com/tirthajit/ai-ml-conference-journal-tracker
+- Webpage: https://tirthajit.github.io/ai-ml-conference-journal-tracker/
+
 
 ## What is included
 

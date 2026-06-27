@@ -1,0 +1,40 @@
+source_name,url,role
+AI Deadlines,https://aideadlines.org/,deadline/ranking/source
+AI Deadlines fork,https://mlciv.com/ai-deadlines/,deadline/ranking/source
+CORE Portal,https://portal.core.edu.au/conf-ranks/,deadline/ranking/source
+CORE Mirror,https://people.iiti.ac.in/~artiwari/cseconflist.html,deadline/ranking/source
+Google Scholar AI venues,https://scholar.google.es/citations?hl=en&view_op=top_venues&vq=eng_artificialintelligence,deadline/ranking/source
+NeurIPS 2026,https://neurips.cc/Conferences/2026/Dates,deadline/ranking/source
+ICML 2026,https://icml.cc/Conferences/2026/Dates,deadline/ranking/source
+ICLR 2026,https://iclr.cc/Conferences/2026/Dates,deadline/ranking/source
+AAAI-27,https://aaai.org/conference/aaai/aaai-27/,deadline/ranking/source
+IJCAI-ECAI 2026,https://2026.ijcai.org/important-dates/,deadline/ranking/source
+ACL 2026,https://2026.aclweb.org/calls/main_conference_papers/,deadline/ranking/source
+EMNLP 2026,https://2026.emnlp.org/calls/main_conference_papers/,deadline/ranking/source
+COLM 2026,https://colmweb.org/dates.html,deadline/ranking/source
+CVPR 2026,https://cvpr.thecvf.com/Conferences/2026/Dates,deadline/ranking/source
+ECCV 2026,https://eccv.ecva.net/Conferences/2026/Dates,deadline/ranking/source
+WACV 2027,https://wacv.thecvf.com/Conferences/2027/Dates,deadline/ranking/source
+KDD 2026,https://kdd2026.kdd.org/research-track-call-for-papers/,deadline/ranking/source
+CIKM 2026,https://cikm2026.diag.uniroma1.it/,deadline/ranking/source
+SIGIR 2026,https://sigir2026.org/en-AU/pages/attending/key-dates,deadline/ranking/source
+AISTATS 2026,https://virtual.aistats.org/Conferences/2026/Dates,deadline/ranking/source
+MLSys 2026,https://mlsys.org/Conferences/2026/Dates,deadline/ranking/source
+UAI 2026,https://www.auai.org/uai2026/call_for_papers,deadline/ranking/source
+AAMAS 2026,https://cyprusconferences.org/aamas2026/call-for-papers-main-track/,deadline/ranking/source
+MICCAI 2026,https://conferences.miccai.org/2026/en/IMPORTANT-DATES.html,deadline/ranking/source
+MIDL 2026,https://2026.midl.io/dates,deadline/ranking/source
+ISBI 2026,https://biomedicalimaging.org/2026/,deadline/ranking/source
+ACM MM 2026,https://2026.acmmm.org/site/important-dates.html,deadline/ranking/source
+ICRA 2027,https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra/,deadline/ranking/source
+RSS 2026,https://roboticsconference.org/information/cfp/,deadline/ranking/source
+ICASSP 2027,https://2027.ieeeicassp.org/call-for-papers/,deadline/ranking/source
+CHI 2027,https://chi2027.acm.org/authors/papers/,deadline/ranking/source
+Scimago AI,https://www.scimagojr.com/journalrank.php?category=1702,deadline/ranking/source
+Scimago ML Journal,https://www.scimagojr.com/journalsearch.php?q=24775&tip=sid,deadline/ranking/source
+Scimago AIJ,https://www.scimagojr.com/journalsearch.php?q=23675&tip=sid,deadline/ranking/source
+Scimago NMI,https://www.scimagojr.com/journalsearch.php?clean=0&q=21101007236&tip=sid,deadline/ranking/source
+Scimago AIM,https://www.scimagojr.com/journalsearch.php?q=24140&tip=sid,deadline/ranking/source
+OOIR AI journals,https://ooir.org/journals.php?category=Computer+Science%2C+Artificial+Intelligence&field=Computer+Science&metric=jif,deadline/ranking/source
+Clarivate JCR,https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/journal-citation-reports/,deadline/ranking/source
+GitHub Pages docs,https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site,deadline/ranking/source

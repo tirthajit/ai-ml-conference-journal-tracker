@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+  <rect width="900" height="240" rx="28" fill="#0f172a"/>
+  <text x="44" y="95" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#f8fafc">AI/ML Venue Tracker</text>
+  <text x="44" y="150" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">Conference deadlines · ranked targets · reputable journals</text>
+  <circle cx="790" cy="80" r="42" fill="#38bdf8"/>
+  <circle cx="720" cy="150" r="34" fill="#22c55e"/>
+  <circle cx="820" cy="160" r="25" fill="#f59e0b"/>
+</svg>

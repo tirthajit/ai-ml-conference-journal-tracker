@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Conference row",
+  "type": "object",
+  "required": [
+    "curated_tier",
+    "acronym",
+    "name",
+    "area",
+    "deadline_confidence",
+    "official_or_tracker_url"
+  ],
+  "properties": {
+    "rank_order": {
+      "type": "string"
+    },
+    "curated_tier": {
+      "type": "string"
+    },
+    "acronym": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "core_rank_prefill": {
+      "type": "string"
+    },
+    "current_or_next_edition": {
+      "type": "string"
+    },
+    "conference_dates": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "abstract_deadline": {
+      "type": "string"
+    },
+    "full_paper_deadline": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "deadline_status": {
+      "type": "string"
+    },
+    "days_from_2026_06_27": {
+      "type": "string"
+    },
+    "deadline_confidence": {
+      "type": "string"
+    },
+    "usual_tentative_window": {
+      "type": "string"
+    },
+    "official_or_tracker_url": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "relevance_tags": {
+      "type": "string"
+    },
+    "last_verified": {
+      "type": "string"
+    }
+  }
+}

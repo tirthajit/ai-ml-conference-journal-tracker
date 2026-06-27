@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Journal row",
+  "type": "object",
+  "required": [
+    "target_priority",
+    "journal",
+    "area",
+    "metric_source_url",
+    "journal_url"
+  ],
+  "properties": {
+    "target_priority": {
+      "type": "string"
+    },
+    "journal": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "jcr_quartile_or_rank_note": {
+      "type": "string"
+    },
+    "sjr_quartile_note": {
+      "type": "string"
+    },
+    "metric_source_url": {
+      "type": "string"
+    },
+    "journal_url": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "relevance_tags": {
+      "type": "string"
+    },
+    "last_verified": {
+      "type": "string"
+    }
+  }
+}
